@@ -30,7 +30,12 @@ const productInfo = product.gameInfo || {};
     const actionResult = addToCart(product);
     dispatch(actionResult);
   }
-  
+  function handleAddToFav(product) {
+    const actionResult = addToFav(product);
+    favDispatch(actionResult);
+
+  }
+
   return (
     <div className="d-flex my-3 px-2">
       <div className="w-50">
