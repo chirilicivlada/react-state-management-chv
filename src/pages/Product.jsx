@@ -9,7 +9,7 @@ import { FavoritesContext } from '../store/Favorites/context';
 export function Product() {
 
   const { dispatch } = useContext(CartContext);
-  
+  const { favDispatch } = useContext(FavoritesContext);
 
   let { id } = useParams();
   id = decodeURI(id);
